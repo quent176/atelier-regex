@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AtelierRegex</string>
+    <string name="name">Nom et Prénom</string>
+    <string name="name_here">Vos nom et prénom</string>
+    <string name="age">Âge</string>
+    <string name="age_here">Votre âge</string>
+    <string name="email">Email</string>
+    <string name="email_here">Votre adresse email</string>
+    <string name="address">Adresse</string>
+    <string name="address_here">Votre adresse postale</string>
+    <string name="send">Envoyer</string>
+</resources>

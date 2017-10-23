@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AtelierRegex.Container"
+    tools:context="com.example.bastienwcs.atelierregex.MainActivity">
+
+    <TextView
+        style="@style/AtelierRegex.Label"
+        android:text="@string/name"/>
+    <EditText
+        android:id="@+id/name"
+        style="@style/AtelierRegex.EditText"
+        android:inputType="textPersonName"
+        android:hint="@string/name_here" />
+
+    <TextView
+        style="@style/AtelierRegex.Label"
+        android:text="@string/age"/>
+    <EditText
+        android:id="@+id/age"
+        style="@style/AtelierRegex.EditText"
+        android:inputType="number"
+        android:hint="@string/age_here" />
+
+    <TextView
+        style="@style/AtelierRegex.Label"
+        android:text="@string/address"/>
+    <EditText
+        android:id="@+id/address"
+        style="@style/AtelierRegex.EditText"
+        android:inputType="textPostalAddress"
+        android:hint="@string/address_here" />
+
+    <TextView
+        style="@style/AtelierRegex.Label"
+        android:text="@string/email"/>
+    <EditText
+        android:id="@+id/email"
+        style="@style/AtelierRegex.EditText"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_here" />
+
+    <Button
+        android:id="@+id/send"
+        style="@style/AtelierRegex.Button"
+        android:text="@string/send"/>
+
+</LinearLayout>
