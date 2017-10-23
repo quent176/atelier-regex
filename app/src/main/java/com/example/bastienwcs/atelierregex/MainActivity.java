@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,28 +26,33 @@ public class MainActivity extends AppCompatActivity {
                 // TODO: check Name here
 
                 if (!isNameOk) {
-                    name.setError("Le nom ne doit contenir que des caractères alphabétiques");
+                    name.setError(getResources().getString(R.string.error_name));
                 }
 
                 boolean isAgeOk = false;
                 // TODO: check Age here
 
                 if (!isAgeOk) {
-                    age.setError("L\'âge ne doit contenir que des caractères numériques");
+                    age.setError(getResources().getString(R.string.error_age));
                 }
 
                 boolean isAddressOk = false;
                 // TODO: check Address here
 
                 if (!isAddressOk) {
-                    address.setError("L'adresse doit avoir la forme : n° et rue, code postal ville");
+                    address.setError(getResources().getString(R.string.error_address));
                 }
 
                 boolean isEmailOk = false;
                 // TODO: check Email here
 
                 if (!isEmailOk) {
-                    email.setError("L'adresse email n\'a pas le bon format");
+                    email.setError(getResources().getString(R.string.error_email));
+                }
+
+                if (isNameOk && isAgeOk && isAddressOk && isEmailOk) {
+                    Toast.makeText(MainActivity.this,
+                            getResources().getString(R.string.success), Toast.LENGTH_LONG).show();
                 }
             }
         });

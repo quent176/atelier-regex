@@ -9,4 +9,9 @@
     <string name="address">Adresse</string>
     <string name="address_here">Votre adresse postale</string>
     <string name="send">Envoyer</string>
+    <string name="error_name">Le nom ne doit contenir que des caractères alphabétiques</string>
+    <string name="error_age">L\'âge ne doit contenir que des caractères numériques</string>
+    <string name="error_address">L\'adresse doit avoir la forme : n° et rue, code postal ville</string>
+    <string name="error_email">L\'adresse email n\'a pas le bon format</string>
+    <string name="success">Tout est OK !</string>
 </resources>
